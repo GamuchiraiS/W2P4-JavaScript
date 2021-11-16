@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<meta charset="UTF-8" >
+<script type="text/javascript">
+	var str; //data type: string
+	var letters, digits, stringLength, index; //data type: string
+	letters = digits = stringLength = index = 0; 
+
+	//Accepting string from user
+	str = prompt("Enter a string: "); 
+	//Changing input into lowercase
+	str = str.toLowerCase();
+	//Checking the length of the string 
+	stringLength = str.length; 
+
+	//run when the index is less than stringLength
+	while (index < stringLength){
+		//if the letter is between a - z
+		//then increment letters
+		if ((str.charAt(index) >= 'a' && str.charAt(index) <= 'z')){
+			letters++;
+		}
+		//and if digits are between 0 - 9
+		//then increment digits
+		else if (str.charAt(index) >= '0' && str.charAt(index) <= '9'){
+			digits++;
+		}
+		index++; //increments 
+	}
+	console.log("Number of letters: " + letters);
+	console.log("Number of digits: " + digits);
+</script>
+</head>
+<body>	
+</body>	
+</html>
